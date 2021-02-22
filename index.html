@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <input id="password" type = "text">
+        </div>
+        <div class="card-footer">
+          <button onclick= 'passwordGen()' class="btn">Generate Password</button>
+          <div id="choicebox">
+            <form class="form">
+              <label>Number of Characters</label>
+              <div>
+              <input type ="Numbers" min="8" max="128" value ="8"
+                id ="characterAmountNumber"></input>
+              </div>
+              <label for ="Numbers">Include Number</label>
+              <input type ="checkbox" id ="includeNumbers"></input>
+              
+              <label for ="Upercase">Include Uppercase</label>
+              <input type ="checkbox" id ="includeUppercase"></input>
+
+              <label for ="Lowercase">Include Lowercase</label>
+              <input type ="checkbox" id ="includeLowercase"></input>
+
+              <label for ="Symbol">Include Symbols</label>
+              <input type ="checkbox" id ="includeSymbols"></input>
+
+            </form>
+          </div>
+            <div class ="card-footer2"></div>
+            <button id = "generate" onclick = 'generate()' class="btn">Continue</button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
